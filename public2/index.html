@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet"
+    type = "css/styles.css"
+    href = "styles.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+    <script src="script.js"></script>
+
+    <title>Document</title>
+</head>
+<body>    
+        <div>
+          <label for="firstName">First Name</label>
+          <input name="firstName" id="firstName" value="">
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input name="lastName" id="lastName" value="">
+        </div>
+        <div>
+          <button type="button" onclick="regUser()">Register User</button>
+        </div>
+      
+        <div>
+          <button type="button" onclick="window.location.href='/allHours';">View all Users</button>
+        </div>
+        <div>
+          <button type="button" onclick="clockIn()" >Clock In </button>
+        </div>
+        <div>
+          <button type="button" onclick="clockOut()" >Clock Out</button>
+        </div>
+        <div>
+          <button type="button" onclick="getPay()" > Get Pay</button>
+        </div>
+        <div>
+          <button type="button" onclick="resetEverything() "> RESET EVERYTHING!</button>
+        </div>
+        <div>
+          <p>USERS</p>
+          <ul id="users">
+              
+          </ul>
+        </div>
+</body>
+</html>
